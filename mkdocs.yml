@@ -1,4 +1,4 @@
-site_name: 通达信帮助
+site_name: 通达信公式
 site_url: https://tdx.icopy.site/
 theme:
   font: false
@@ -9,39 +9,57 @@ theme:
   language: zh
   features:
     - navigation.top
-    - toc.integrate
 plugins:
   - search:
       prebuild_index: true
       lang: ja
 markdown_extensions:
+  - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.details
+  - pymdownx.highlight:
+      use_pygments: false
+  - pymdownx.superfences
   - admonition
   - toc:
-      toc_depth: 3
+      toc_depth: 6
       permalink: true
 
+extra_javascript:
+  - https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/highlight.min.js
+  - javascripts/config.js
+extra_css:
+  - https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/default.min.css
+  - https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/vs.min.css
+
 nav:
-    - "index.md"
-    - '公式系统(初级).md'
-    - '公式系统(中级).md'
-    - '公式系统(高级).md'
-    - '公式系统(答疑).md'
-    - 决策模型.md
-    - 定制品种.md
-    - 定制版面.md
-    - 报表分析.md
-    - 指标使用与分析.md
-    - 推演和训练操作功能.md
-    - 深度数据分析功能.md
-    - 特色资讯功能.md
-    - 画线工具.md
-    - 策略股票池.md
-    - 系统设置.md
-    - 自定义数据.md
-    - 资金流向功能.md
-    - 选股器和指标评测.md
-    - 通达信功能使用技巧.md
-    - 通达信行情系统计算规则解释.md
-    - 预警系统.md
+    - 基础教程: "index.md"
+    - 教程:
+      - 初级教程: "教程/基础教程.md"
+      - 高级教程: "教程/高级教程.md"
+      - 答疑: "教程/答疑.md"
+    - 代码示例:
+        - 技术指标公式: "代码示例/技术指标公式.md"
+        - 条件选股公式: "代码示例/条件选股公式.md"
+        - 五彩k线指标: "代码示例/五彩k线指标.md"
+        - 专家系统: "代码示例/专家系统.md"
+    - 函数:
+        - 引用函数: "函数/引用函数.md"
+        - 操作符: "函数/操作符.md"
+        - 绘图函数: "函数/绘图函数.md"
+        - 线型和资源: "函数/线型和资源.md"
+        - 数学函数: "函数/数学函数.md"
+        - 时间函数: "函数/时间函数.md"
+        - 统计函数: "函数/统计函数.md"
+        - 财务函数: "函数/财务函数.md"
+        - 资金流向函数: "函数/资金流向函数.md"
+        - 选择函数: "函数/选择函数.md"
+        - 逻辑函数: "函数/逻辑函数.md"
+        - 及时行情函数: "函数/及时行情函数.md"
+        - 序列行情函数: "函数/序列行情函数.md"
+        - 账户函数: "函数/账户函数.md"
+        - 板块字符函数: "函数/板块字符函数.md"
+        - 形态函数: "函数/形态函数.md"
+        - 指数函数: "函数/指数函数.md"
+        - 交易信号函数: "函数/交易信号函数.md"
+        - 其他函数: "函数/其他函数.md"
