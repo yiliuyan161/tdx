@@ -1,0 +1,1257 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://tdx.icopy.site/%E6%95%99%E7%A8%8B/%E7%AD%94%E7%96%91/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>答疑 - 通达信公式</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/default.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/vs.min.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="white">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="通达信公式" class="md-header__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            通达信公式
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              答疑
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="通达信公式" class="md-nav__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    通达信公式
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        基础教程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        教程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="教程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          教程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        初级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        高级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          答疑
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        答疑
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tip" class="md-nav__link">
+    指标公式tip，不显示线或者不在左上方显示输出变量和值等信息。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodrawdrawnull" class="md-nav__link">
+    nodraw和drawnull的区别
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insortapsy20-psyma10" class="md-nav__link">
+    公式脚本：排名:=INSORT('深沪A股','PSY',2,0) ; PSYMA:排名&gt;=10; 用条件选股加入后选股，结果什么也选不出来？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    横向统计函数在个股上执行时，结果会各不相同？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    公式输出变量有值，为什么没有滑出线？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    为什么分析图上指标的值随着分析图缩放而变化？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexc" class="md-nav__link">
+    我在编写指标时，用到了大盘收盘价INDEXC，但实际执行指标后，发现得不到完整的大盘历史数据。请问如何解决？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xp3txttxtxp2" class="md-nav__link">
+    电脑安装上XP3，一打开公式，中文汉字是乱码。拷贝到TXT后没有乱码,在.txt文件中拷过去是乱码,XP2不会有此现象。请问如何解决？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    通达信软件的自定义指标由于某些原因突然消失后如何恢复?(重装系统或者是升级之后的也适用)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    选股不全问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    扩展行情品种综合选股选不出来怎么回事儿？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    公式管理器中引入指标公式，程序出错？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    有些客户的公式导入会提示“无法兼容的公式版本，导入失败”。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    怎样在K线图的右边显示信息.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tfilt-c1111212093011112161500" class="md-nav__link">
+    区间过滤TFILT( C,1111212,0930,1111216,1500) 不能用怎么回事儿。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    求一段时间区间里的成交量的和。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    17 求某段时间的最高价。？（求最高价）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182007614" class="md-nav__link">
+    18选股：选出2007年6月1日以来连续4天跌停的股票。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    公式中引用单只股票的基本行情数据 （高开低收）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    引用个股的行情数据（非基础函数）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#con2str" class="md-nav__link">
+    有客户反应con2str函数有问题的
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    如何在分时主图指标中引用日线的数据
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    不同含义的数据拿来对比的问题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        代码示例
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="代码示例" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          代码示例
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        技术指标公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%9D%A1%E4%BB%B6%E9%80%89%E8%82%A1%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        条件选股公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%BA%94%E5%BD%A9k%E7%BA%BF%E6%8C%87%E6%A0%87/" class="md-nav__link">
+        五彩k线指标
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        专家系统
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        函数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="函数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          函数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E5%BC%95%E7%94%A8%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        引用函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/" class="md-nav__link">
+        操作符
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E7%BB%98%E5%9B%BE%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        绘图函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E7%BA%BF%E5%9E%8B%E5%92%8C%E8%B5%84%E6%BA%90/" class="md-nav__link">
+        线型和资源
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        数学函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        时间函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E7%BB%9F%E8%AE%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        统计函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E8%B4%A2%E5%8A%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        财务函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E8%B5%84%E9%87%91%E6%B5%81%E5%90%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        资金流向函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        选择函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        逻辑函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E5%8F%8A%E6%97%B6%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        及时行情函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E5%BA%8F%E5%88%97%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        序列行情函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E8%B4%A6%E6%88%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        账户函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E6%9D%BF%E5%9D%97%E5%AD%97%E7%AC%A6%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        板块字符函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E5%BD%A2%E6%80%81%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        形态函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        指数函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E4%BA%A4%E6%98%93%E4%BF%A1%E5%8F%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        交易信号函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%87%BD%E6%95%B0/%E5%85%B6%E4%BB%96%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        其他函数
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tip" class="md-nav__link">
+    指标公式tip，不显示线或者不在左上方显示输出变量和值等信息。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodrawdrawnull" class="md-nav__link">
+    nodraw和drawnull的区别
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insortapsy20-psyma10" class="md-nav__link">
+    公式脚本：排名:=INSORT('深沪A股','PSY',2,0) ; PSYMA:排名&gt;=10; 用条件选股加入后选股，结果什么也选不出来？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    横向统计函数在个股上执行时，结果会各不相同？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    公式输出变量有值，为什么没有滑出线？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    为什么分析图上指标的值随着分析图缩放而变化？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexc" class="md-nav__link">
+    我在编写指标时，用到了大盘收盘价INDEXC，但实际执行指标后，发现得不到完整的大盘历史数据。请问如何解决？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xp3txttxtxp2" class="md-nav__link">
+    电脑安装上XP3，一打开公式，中文汉字是乱码。拷贝到TXT后没有乱码,在.txt文件中拷过去是乱码,XP2不会有此现象。请问如何解决？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    通达信软件的自定义指标由于某些原因突然消失后如何恢复?(重装系统或者是升级之后的也适用)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    选股不全问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    扩展行情品种综合选股选不出来怎么回事儿？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    公式管理器中引入指标公式，程序出错？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    有些客户的公式导入会提示“无法兼容的公式版本，导入失败”。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    怎样在K线图的右边显示信息.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tfilt-c1111212093011112161500" class="md-nav__link">
+    区间过滤TFILT( C,1111212,0930,1111216,1500) 不能用怎么回事儿。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    求一段时间区间里的成交量的和。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    17 求某段时间的最高价。？（求最高价）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182007614" class="md-nav__link">
+    18选股：选出2007年6月1日以来连续4天跌停的股票。
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    公式中引用单只股票的基本行情数据 （高开低收）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    引用个股的行情数据（非基础函数）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#con2str" class="md-nav__link">
+    有客户反应con2str函数有问题的
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    如何在分时主图指标中引用日线的数据
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    不同含义的数据拿来对比的问题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 展示广告3 -->
+<p><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6890694312814945"
+     data-ad-slot="8321470275"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h1 id="_1">公式系统(答疑)<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h3 id="tip">指标公式tip，不显示线或者不在左上方显示输出变量和值等信息。<a class="headerlink" href="#tip" title="Permanent link">&para;</a></h3>
+<pre class="highlight"><code class="language-tdx">A:C,NODRAW; {可以在左上方显示变量和输出值，但是不画线。}
+NOTEXT1:MA(CLOSE,M1) ;
+NOTEXT2:MA(CLOSE,M2) ;
+NOTEXT3:MA(CLOSE,M3) ;
+NOTEXT4:MA(CLOSE,M4) ;</code></pre>
+<h3 id="nodrawdrawnull">nodraw和drawnull的区别<a class="headerlink" href="#nodrawdrawnull" title="Permanent link">&para;</a></h3>
+<p>第一个是不画线显示数值 第二个是不画线 也不显示数值（值为无效值-）
+<pre class="highlight"><code class="language-tdx">AA:WINNER(C) ,NODRAW;
+AA:WINNER(C) ,DRAWNULL;</code></pre></p>
+<p>这些前缀的输出就可以不显示输出的变量和输出变量的值等信息了。</p>
+<h3 id="insortapsy20-psyma10">公式脚本：排名:=INSORT('深沪A股','PSY',2,0) ; PSYMA:排名&gt;=10; 用条件选股加入后选股，结果什么也选不出来？<a class="headerlink" href="#insortapsy20-psyma10" title="Permanent link">&para;</a></h3>
+<p>‘深沪Ａ股’版块名称中的字母要是英文输入法下的全角字符。引用系统里含大写字母的板块（如B股 AH对照），都按这个规则来写，不过不要引用含个股太多的股票最好不要超过100的板块，不然用这个INSORT函数，电脑几乎动不了，很卡很慢。</p>
+<h3 id="_2">横向统计函数在个股上执行时，结果会各不相同？<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>原因是其他股票的K线要以当前个股的时间序列为模板进行过滤。</p>
+<h3 id="_3">公式输出变量有值，为什么没有滑出线？<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>通达信的画线对于单个周期有值，前后两个周期都是无效值的情况是不画线的，只是画了一个点。所以一般要用BACKSET向前赋值函数来解决这个问题。</p>
+<h3 id="_4">为什么分析图上指标的值随着分析图缩放而变化？<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>指标中应该用到了ema，tma，expma等函数，它们的计算结果本就是会随着参与计算的k线个数变化而变化的，这是它们的算法决定的。</p>
+<p>ema的算法公式是：
+<pre class="highlight"><code class="language-tdx">Y=(2*c+(n-1) Y') /(n+1) ;{其他两个的算法也和这个很相似}</code></pre></p>
+<p>可以看出ema(c,n) 函数计算的结果和历史每一天的c值都有关系。</p>
+<p>如果你希望看到的结果不变，可以设置分析图完全使用下载的日线数据。</p>
+<h3 id="indexc">我在编写指标时，用到了大盘收盘价INDEXC，但实际执行指标后，发现得不到完整的大盘历史数据。请问如何解决？<a class="headerlink" href="#indexc" title="Permanent link">&para;</a></h3>
+<p>INDEXC 这样的大盘数据的历史数据部分是从下载到本地的历史数据中取得的。要下载完整历史日线。</p>
+<p>另外，跨周期引用，引用其他股票k线，或者计算其他股票的指标时所使用的历史数据部分都会从本地下载数据中取。</p>
+<h3 id="xp3txttxtxp2">电脑安装上XP3，一打开公式，中文汉字是乱码。拷贝到TXT后没有乱码,在.txt文件中拷过去是乱码,XP2不会有此现象。请问如何解决？<a class="headerlink" href="#xp3txttxtxp2" title="Permanent link">&para;</a></h3>
+<p>这是一个在Windows 2000和Windows XP系统中很常见的现象，属于设置问题。解决这个问题的方法是：</p>
+<ul>
+<li>
+<p>在复制文字前用“Ctrl+Shift”组合键调出中文输入法，以后再执行“复制”/“粘贴”操作就不会出现乱码问题了。</p>
+</li>
+<li>
+<p>不使用系统自带的“文本编辑器”，安装EmEditor或UltraEdit文本编辑器，在里面选择“按ANSI方式粘贴”功能即可。</p>
+</li>
+<li>
+<p>还有一种解决方法是在系统中是把默认文字输入法设为中文状态下的英文输入法。用鼠标在系统桌面上依次选择“开始→设置→控制面板→文字服务”，里面通常会有英语和简体中文两种语言，英语下面有“英语（美国）” 一类的项目，中文下面则有“简体中文输入法（美国）”、“微软拼音输入法”一类的项目。实际上，这个“简体中文输入法（美国）” 就是在中文状态下输入英文的。但是它与上面的英语下面的“英语（美国）”又不同，后者是在英文状态下输入英文。只要你把要这个“简体中文输入法（美国）”设为默认输入法（以后右下角输入法上面总是显示“Ch”，而不是“En”），就不会出现粘贴乱码的情况了。如果你的电脑中找不到这一项，说明你没有安装，要么通过系统盘安装，要么使用上面方法。</p>
+</li>
+</ul>
+<h3 id="_5">通达信软件的自定义指标由于某些原因突然消失后如何恢复?(重装系统或者是升级之后的也适用)<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>关闭通达信软件</p>
+</li>
+<li>
+<p>进入通达信软件安装的文件夹，找到T0002文件夹进入</p>
+</li>
+<li>
+<p>进入gs_bak文件夹，此文件夹内为公式备份</p>
+</li>
+<li>
+<p>将日期为最近的以下三个文件改名即可。文件为： 20100310_PriGS.dat --&gt;PriGS.dat ，20100310_PriCS.dat--&gt;PriCS.dat ,20100310_PriText.dat--&gt;PriText.dat 其中20100310为日期数，如10号的备份文件名就是30100310_PriGS.dat ，改名的规则就是20100310_PriGS.dat --&gt;PriGS.dat</p>
+</li>
+<li>
+<p>然后将改名后的三个文件复制到T0002目录内覆盖即可。</p>
+</li>
+<li>
+<p>重启通达信软件。</p>
+</li>
+</ol>
+<h3 id="_6">选股不全问题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>选股不全，原因很可能是历史数据缺失的问题。（给客户验证是数据问题的步骤）</p>
+<p>如果客户说那个股票副图信号为1，但是该条件的选股公式没有选出哪只股票，那么就把这只股票的数据重新下载尽可能长的时间的数据，然后缩小选股范围（方便一眼看出选出来的股票包括刚刚下载了数据的那个股票），如果选出来此股，说明就是数据缺失问题。</p>
+<p>例说</p>
+<p>如选股公式：
+<pre class="highlight"><code class="language-tdx">DIF:=EMA(C,24) -EMA(C,48) ;
+DEA:=EMA(DIF,12) ;
+MACD:=2*(DIF-DEA) ;
+BU:MACD&lt;0 AND="AND" DIF="DIF" &gt;0;</code></pre></p>
+<p>选股日期：2011年10月12日</p>
+<p>选出来的股票中，不含有 “ST兰光 ST鲁北 ST三联 ST万鸿 象屿股份 新华联 浙报传媒”这几天股票，</p>
+<p>而根据技术指标来看，很明显这几只票也是符合选股条件的。</p>
+<p>这几个票的共同之处就是分别于今年的8/26、8/18、7/25、9/8、8/29 、7/8、 9/29有过涨跌幅不受限制。</p>
+<p>试过好几个版本，包括最新的测试版，问题都是相同的。怎么回事儿？</p>
+<p>验证是因为历史数据缺失造成的时候发现其中2个 都是中间有半年甚至一年停牌的。其他的几只没选出来的股票 ，猜测应该都有类似问题所以就没有验证了。</p>
+<p>条件选股功能计算时是使用本地数据的，所以本地数据必须完整。下载2008年以后的完整数据再选，试试都成功选出来了。</p>
+<p>一般而言选不全股票的那种条件选股中都包含了参数N。公式中的参数，那个参数的数值越大本地差K线数据的可能性就越大，所以下载的k线最少要满足里面用到的最大参数的值个数，本题中好像是“60”用到60日移动平均，和60日收盘平均了，如果哪个股票不满足60个连续的K线数据，哪个股票就选不出。</p>
+<p>结论：选股时有些符合条件的没选出来 考虑两个要素：</p>
+<p>1 历史数据是否足够 2 条件式边界值是否不够精确 x=0.1 写成0&lt;x&lt;0.2最好</p>
+<h3 id="_7">扩展行情品种综合选股选不出来怎么回事儿？<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>系统——盘后数据下载 （最后一项扩展行情日线下载或者是港股期货日线下载，下载完整的扩展行情数据）</p>
+<p>因为一般的使用选股时会提示本地数据不全，然后就问补全数据不，这时候一般客户为了选股都会选择确定，然后终于数据下完了可以选了，但是发现扩展行情的还是没有选出来，那是因为条件选股默认的补全日线数据，也是针对普通的深沪股票，而不是扩展行情。所以扩展行情选股还是要先下载扩展行情完整的日线数据。</p>
+<h3 id="_8">公式管理器中引入指标公式，程序出错？<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>试着检查下自编公式，是否在该公式中自引用了。</p>
+<h3 id="_9">有些客户的公式导入会提示“无法兼容的公式版本，导入失败”。<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>（公式导入导出功能是TCalc.dll这个dll控制的）</p>
+<p>因为他们是用粘贴复制指标代码的方法建的文本文件，然后重命名为.tni文件的而不是从客户端导出的tni文件 ，所以会有这样的错误。</p>
+<p>验证客户是不是有这个问题的方法很简单就是反键打开文件用记事本方式可以打开看到内容这样的tni文件就是不合法的，真正的tni文件打开看到的只会是乱码。</p>
+<h3 id="k">怎样在K线图的右边显示信息.<a class="headerlink" href="#k" title="Permanent link">&para;</a></h3>
+<p>1 建主图叠加指标公式 DRAWTEXT_FIX(1,0.99,0.03,1,'右边显示信息') ,COLORGREEN;</p>
+<p>2 ALT+F12 直接使用画线工具中的定点文本注释，在右侧直接书写文字注释。</p>
+<h3 id="tfilt-c1111212093011112161500">区间过滤TFILT( C,1111212,0930,1111216,1500) 不能用怎么回事儿。<a class="headerlink" href="#tfilt-c1111212093011112161500" title="Permanent link">&para;</a></h3>
+<p>(区间过滤12月12日至12月16日收盘价公式) </p>
+<p>日周期以上（包括日周期），把分钟参数设置为0就可以了如TFILT(C,1111212,0,1111216,0)  函数说明中有的。</p>
+<h3 id="_10">求一段时间区间里的成交量的和。<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>方法一：</p>
+<p>比方说你要统计的是2010年0101 到20100105的成交量和的话那就可以先一个sum函数SUM(VOL，5) 然后如果你取到20100105这天的这个值就可以了</p>
+<pre class="highlight"><code class="language-tdx">REFDATE(SUM(VOL,5) ,1100105) ;</code></pre>
+<p>方法二：</p>
+<p>Volsum:=IF(YEAR=1998 AND (MONTH&gt;8 OR (MONTH=8 AND DAY&gt;=3)  )  AND (MONTH&lt;12 OR (MONTH=12 AND DAY&lt;=20)  ) ,v,0) ;</p>
+<p>这个可以使得历史某天以来某只股票的 这个日期范围内的股票的vol都还是vol 这个日期职位的 volsum的值都为零</p>
+<p>所以有了上面这句话 还要一句话就可以实现了
+<pre class="highlight"><code class="language-tdx">SUM(VOLSUM,0) ;</code></pre></p>
+<h3 id="17">17 求某段时间的最高价。？（求最高价）<a class="headerlink" href="#17" title="Permanent link">&para;</a></h3>
+<p>1）某绝对时间段最高价</p>
+<p>此脚本段求1998年8月3日到1998年12月20日间的最高价：
+<pre class="highlight"><code class="language-tdx">HH:=IF(YEAR=1998 AND (MONTH&gt;8 OR (MONTH=8 AND DAY&gt;=3)  )  AND (MONTH&lt;12 OR (MONTH=12 AND DAY&lt;=20)  ) ,H,0) ;
+{HH变量在该时间段内等于H，其他时间为0}{使得HH在规定期内是每日的最高值，其他的时间内都为0}
+HHV(HH,0) ;{此例求1998年8月3日到1998年12月20日间的最高价}</code></pre></p>
+<h3 id="182007614">18选股：选出2007年6月1日以来连续4天跌停的股票。<a class="headerlink" href="#182007614" title="Permanent link">&para;</a></h3>
+<p>对于之前不可以选定选股时间范围的版本：
+<pre class="highlight"><code class="language-tdx">DT:=(C-REF(C,1) ) /REF(C,1) *100&lt;=-9;
+TJ:=EVERY(DT,4) ;
+SHUCHU:IF(( YEAR&gt;2007 OR (YEAR=2007 AND ( MONTH&gt;6 OR (MONTH=6 AND DAY&gt;=1)  )  )  ) ,TJ,0) ;</code></pre></p>
+<p>可以设定选股时间范围的新版本：
+<pre class="highlight"><code class="language-tdx">DT:=(C-REF(C,1) ) /REF(C,1) *100&lt;=-9;
+TJ:EVERY(DT,4) ;{注意需要在条件选股中设定选股的日期范围}</code></pre></p>
+<h3 id="_11">公式中引用单只股票的基本行情数据 （高开低收）<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>问：请问如何区分代码相同的品种？比如深康佳的收盘价为:"000016$C"，同样上证50的代码也是000016，这两个怎么区分开？</p>
+<p>答："SH000016$C"; SZ是限制深圳市场 刚好个股000016是深圳 000016指数是上证的</p>
+<h3 id="_12">引用个股的行情数据（非基础函数）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>方法一：$操作符</p>
+<p>想比较指定的两个股票000001和000002的收盘价。但是那个引用操作符“$”只能引用基础函数 。</p>
+<p>方法二：</p>
+<p>编写甲乙二个公式，用乙公式引用甲公式。</p>
+<p>例如甲公式取名：买入价。</p>
+<p>买1价:DYNAINFO(20) ;</p>
+<p>用乙公式引用甲公式：
+<pre class="highlight"><code class="language-tdx">CALCSTOCKINDEX('000001SZ','买入价',1) ;
+CALCSTOCKINDEX('000002SZ','买入价',1) ;</code></pre></p>
+<p>这样儿是可以取到这两个股票当时的即时的买一价，但是这个是即时行情数据 其实觉得没有第一种方法人性化，但是这个方法来引用个股非基础函数（H L O C）的好方法。CALCSTOCKINDEX。</p>
+<p>CALCSTOCKINDEX（指标说明）</p>
+<p>用法:CALCSTOCKINDEX(股票代码,指标名称,指标线) ,</p>
+<p>返回股票该指标相应输出的计算值.</p>
+<p>例如:CALCSTOCKINDEX('600000SH','KDJ',3) 表示上证600000股票的KDJ指标第三个输出即J之值</p>
+<h3 id="con2str">有客户反应con2str函数有问题的<a class="headerlink" href="#con2str" title="Permanent link">&para;</a></h3>
+<p>因为这个函数转换后的值必须用drawtext来输出才可以正确显示。</p>
+<h3 id="_13">如何在分时主图指标中引用日线的数据<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>（要点是此指标要是主图叠加类型的指标 因为只有这类型的指标才可以在分时图中选择被使用）</p>
+<p>比如在分时主图上画昨日的最高值最低值的线</p>
+<p>1.先做一个次指标FSSUB:
+<pre class="highlight"><code class="language-tdx">LASTHIGH:REF(HIGH,1) ;
+LASTLOW:REF(LOW,1) ;</code></pre></p>
+<p>2.再做一个主指标FS:(主图叠加类型) 
+<pre class="highlight"><code class="language-tdx">ZG:FSSUB.LASTHIGH#DAY;
+ZD:FSSUB.LASTLOW#DAY;</code></pre></p>
+<p>就可以在分时图主图上使用这个FS指标了</p>
+<p>注意:跨周期引用需要下载完整的日K线</p>
+<p>直接用上面1做成主图叠加指标加入到k线图和2引用日线数据#DAY是有区别的。直接在分时的引用就是分钟周期的指标公式的值。</p>
+<h3 id="_14">不同含义的数据拿来对比的问题<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>例1：</p>
+<p>主力风向标的统计数据应该是和DDX的统计值一样的，其实主力风向标引用的应该也就是DDX的数值吧，这个没有疑问。可是DDX为负值，也就是说大单流出是大于大单流入的，可为什么同一只股票DDX为负值，为什么资金博弈的超大单和大单统计却是资金大幅流入。</p>
+<pre class="highlight"><code class="language-tdx">DDX:(逐笔买入大单成交-逐笔卖出大单成交) *10000/流通股本(股)
+(LARGEINTRDVOL-LARGEOUTTRDVOL) ;{这个是(逐笔买入大单成交-逐笔卖出大单成交) }</code></pre>
+<p>分档解释：
+<pre class="highlight"><code class="language-tdx">L2\_VOL(N,M)  {N(0--3):超大/大/中/小四档处理,M(0--3) :买入/卖出/主买/主卖四类}</code></pre></p>
+<p>也可以用下面的lev2分档函数表示
+<pre class="highlight"><code class="language-tdx">(L2\_VOL(0,0) +L2\_VOL(1,0) ) -(L2\_VOL(0,1) +L2\_VOL(1,1) ) ;
+{逐笔买入大单成交量,相当于L2\_VOL(0,0) +L2\_VOL(1,0) ,就是分档中的超大单和大单的买入 资金流向功能专用};
+{逐笔卖出大单成交量,相当于L2\_VOL(0,1) +L2\_VOL(1,1) ,就是分档中的超大单和大单的卖出 资金流向功能专用};</code></pre>
+当日超大单:当日超大单净流入（超大单主买金额-超大单主卖金额）即 L2_AMO(0,2) -L2_AMO(0,3) </p>
+<p>当日大单:当日大单净流入（大单主买金额-大单主卖金额） 即 L2_AMO(1,2) -L2_AMO(1,3) </p>
+<p>区别：一个是分档中的买卖 一个是分档中的主买主卖 ；</p>
+<p>一个是量一个是金额 所以不是一个东西。不一样是正常的！</p>
+<p>例2:</p>
+<p>TRADENUM=逐笔成交总单数</p>
+<p>TRADEINNUM=逐笔买入成交单数</p>
+<p>TRADEOUTNUM=逐笔卖出成交单数</p>
+<p>此三个函数个人以为:逐笔成交总单数=逐笔买入成交单数+逐笔卖出成交单数;</p>
+<p>实际上逐笔成交总单数与(逐笔买入成交单数+逐笔卖出成交单数) 之间并不相等,相差很大。
+<pre class="highlight"><code class="language-tdx">BUYNUM:TRADEINNUM{=逐笔买入成交单数}; {可以理解为所有的超大单 大单 中单 小单的买卖的总单数}
+BUYNUM1:L2\_VOLNUM(0,0) +L2\_VOLNUM(1,0) ;{L2\_VOLNUM(N,M) 单数分档,按: N(0--1) :(超大+大) /(中+小) ,M(0--1) :买/卖二类,资金流向功能专用};
+SELLNUM:TRADEOUTNUM{=逐笔卖出成交单数};
+SELLNUM1:L2\_VOLNUM(0,1) +L2\_VOLNUM(1,1) ;{L2\_VOLNUM(N,M) 单数分档,按: N(0--1) :(超大+大) /(中+小) ,M(0--1) :买/卖二类,资金流向功能专用};</code></pre></p>
+<p>TRADENUM=逐笔成交总单数=超大 大 中的主买 主卖的总单和 。（买入：主买+被买 卖出：主卖+被卖）</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 高级教程" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              高级教程
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E5%85%AC%E5%BC%8F/" class="md-footer__link md-footer__link--next" aria-label="下一页: 技术指标公式" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              技术指标公式
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>

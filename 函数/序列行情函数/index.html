@@ -1,0 +1,1266 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://tdx.icopy.site/%E5%87%BD%E6%95%B0/%E5%BA%8F%E5%88%97%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>序列行情函数 - 通达信公式</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/default.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/vs.min.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="white">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="通达信公式" class="md-header__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            通达信公式
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              序列行情函数
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="通达信公式" class="md-nav__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    通达信公式
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        基础教程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        教程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="教程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          教程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        初级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        高级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E7%AD%94%E7%96%91/" class="md-nav__link">
+        答疑
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        代码示例
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="代码示例" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          代码示例
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        技术指标公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%9D%A1%E4%BB%B6%E9%80%89%E8%82%A1%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        条件选股公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%BA%94%E5%BD%A9k%E7%BA%BF%E6%8C%87%E6%A0%87/" class="md-nav__link">
+        五彩k线指标
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        专家系统
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        函数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="函数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          函数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BC%95%E7%94%A8%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        引用函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%93%8D%E4%BD%9C%E7%AC%A6/" class="md-nav__link">
+        操作符
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BB%98%E5%9B%BE%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        绘图函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BA%BF%E5%9E%8B%E5%92%8C%E8%B5%84%E6%BA%90/" class="md-nav__link">
+        线型和资源
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        数学函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        时间函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BB%9F%E8%AE%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        统计函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A2%E5%8A%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        财务函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B5%84%E9%87%91%E6%B5%81%E5%90%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        资金流向函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        选择函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        逻辑函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%8A%E6%97%B6%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        及时行情函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          序列行情函数
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        序列行情函数
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    序列行情函数
+  </a>
+  
+    <nav class="md-nav" aria-label="序列行情函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advance" class="md-nav__link">
+    ADVANCE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amo" class="md-nav__link">
+    AMO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amount" class="md-nav__link">
+    AMOUNT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    C
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close" class="md-nav__link">
+    CLOSE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dclose" class="md-nav__link">
+    DCLOSE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decline" class="md-nav__link">
+    DECLINE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhigh" class="md-nav__link">
+    DHIGH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlow" class="md-nav__link">
+    DLOW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dopen" class="md-nav__link">
+    DOPEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dvol" class="md-nav__link">
+    DVOL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    H
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high" class="md-nav__link">
+    HIGH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hkshortvol" class="md-nav__link">
+    HKSHORTVOL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    L
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low" class="md-nav__link">
+    LOW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    O
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open" class="md-nav__link">
+    OPEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qhjsj" class="md-nav__link">
+    QHJSJ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sectotime" class="md-nav__link">
+    SECTOTIME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timetosec" class="md-nav__link">
+    TIMETOSEC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    V
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vol" class="md-nav__link">
+    VOL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volinstk" class="md-nav__link">
+    VOLINSTK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zstjj" class="md-nav__link">
+    ZSTJJ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A6%E6%88%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        账户函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9D%BF%E5%9D%97%E5%AD%97%E7%AC%A6%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        板块字符函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BD%A2%E6%80%81%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        形态函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        指数函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%A4%E6%98%93%E4%BF%A1%E5%8F%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        交易信号函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%B6%E4%BB%96%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        其他函数
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    序列行情函数
+  </a>
+  
+    <nav class="md-nav" aria-label="序列行情函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advance" class="md-nav__link">
+    ADVANCE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amo" class="md-nav__link">
+    AMO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amount" class="md-nav__link">
+    AMOUNT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    C
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close" class="md-nav__link">
+    CLOSE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dclose" class="md-nav__link">
+    DCLOSE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decline" class="md-nav__link">
+    DECLINE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhigh" class="md-nav__link">
+    DHIGH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlow" class="md-nav__link">
+    DLOW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dopen" class="md-nav__link">
+    DOPEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dvol" class="md-nav__link">
+    DVOL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    H
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high" class="md-nav__link">
+    HIGH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hkshortvol" class="md-nav__link">
+    HKSHORTVOL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    L
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low" class="md-nav__link">
+    LOW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    O
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open" class="md-nav__link">
+    OPEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qhjsj" class="md-nav__link">
+    QHJSJ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sectotime" class="md-nav__link">
+    SECTOTIME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timetosec" class="md-nav__link">
+    TIMETOSEC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    V
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vol" class="md-nav__link">
+    VOL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volinstk" class="md-nav__link">
+    VOLINSTK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zstjj" class="md-nav__link">
+    ZSTJJ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>序列行情函数</h1>
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 展示广告3 -->
+<p><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6890694312814945"
+     data-ad-slot="8321470275"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h2 id="_1">序列行情函数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="advance">ADVANCE<a class="headerlink" href="#advance" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：上涨家数</p>
+<p>描述：返回该周期上涨家数。<br />
+本函数仅对沪深指数有效。</p>
+<h3 id="amo">AMO<a class="headerlink" href="#amo" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：成交额（元）</p>
+<p>描述：该周期成交额，同AMOUNT。  </p>
+<p>用法：AMO;<br />
+返回该周期成交额，单位元。</p>
+<h3 id="amount">AMOUNT<a class="headerlink" href="#amount" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：成交额（元）</p>
+<p>描述：该周期成交额。  </p>
+<p>用法：AMOUNT;<br />
+返回该周期成交额，单位元。</p>
+<h3 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：收盘价</p>
+<p>描述：该周期收盘价，同CLOSE。  </p>
+<p>用法：C;<br />
+返回该周期收盘价。</p>
+<h3 id="close">CLOSE<a class="headerlink" href="#close" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：收盘价</p>
+<p>描述：该周期收盘价。  </p>
+<p>用法：CLOSE;<br />
+返回该周期收盘价。</p>
+<h3 id="dclose">DCLOSE<a class="headerlink" href="#dclose" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：不定周期收盘价</p>
+<p>描述：返回该不定周期收盘价。</p>
+<h3 id="decline">DECLINE<a class="headerlink" href="#decline" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：下跌家数</p>
+<p>描述：返回该周期下跌家数。<br />
+本函数仅对沪深指数有效。</p>
+<h3 id="dhigh">DHIGH<a class="headerlink" href="#dhigh" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：不定周期最高价</p>
+<p>描述：返回该不定周期最高价。</p>
+<h3 id="dlow">DLOW<a class="headerlink" href="#dlow" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：不定周期最低价</p>
+<p>描述：返回该不定周期最低价。</p>
+<h3 id="dopen">DOPEN<a class="headerlink" href="#dopen" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：不定周期开盘价</p>
+<p>描述：返回该不定周期开盘价。</p>
+<h3 id="dvol">DVOL<a class="headerlink" href="#dvol" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：不定周期成交量</p>
+<p>描述：返回该不定周期成交量。</p>
+<h3 id="h">H<a class="headerlink" href="#h" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：最高价</p>
+<p>描述：该周期最高价，同HIGH。  </p>
+<p>用法：H;<br />
+返回该周期最高价</p>
+<h3 id="high">HIGH<a class="headerlink" href="#high" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：最高价</p>
+<p>描述：该周期最高价。  </p>
+<p>用法：HIGH;<br />
+返回该周期最高价</p>
+<h3 id="hkshortvol">HKSHORTVOL<a class="headerlink" href="#hkshortvol" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：抛空量</p>
+<p>描述：返回该周期抛空量。</p>
+<h3 id="l">L<a class="headerlink" href="#l" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：最低价</p>
+<p>描述：该周期最低价，同LOW。  </p>
+<p>用法：L;<br />
+返回该周期最低价。</p>
+<h3 id="low">LOW<a class="headerlink" href="#low" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：最低价</p>
+<p>描述：该周期最低价。  </p>
+<p>用法：LOW;<br />
+返回该周期最低价。</p>
+<h3 id="o">O<a class="headerlink" href="#o" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：开盘价</p>
+<p>描述：该周期开盘价，同OPEN。  </p>
+<p>用法：O;<br />
+返回该周期开盘价。</p>
+<h3 id="open">OPEN<a class="headerlink" href="#open" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：开盘价</p>
+<p>描述：该周期开盘价。  </p>
+<p>用法：OPEN;<br />
+返回该周期开盘价。</p>
+<h3 id="qhjsj">QHJSJ<a class="headerlink" href="#qhjsj" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：结算价</p>
+<p>描述：返回该周期结算价。</p>
+<h3 id="sectotime">SECTOTIME<a class="headerlink" href="#sectotime" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：转换时间</p>
+<p>描述：求0时后若干秒是什么时间。  </p>
+<p>用饭：SECTOTIME(N);<br />
+返回0时后N秒是什么时间，有效秒数为(0 ~ 86399)。  </p>
+<p>例如：SECTOTIME;<br />
+(34200)返回93000。</p>
+<h3 id="timetosec">TIMETOSEC<a class="headerlink" href="#timetosec" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：当日秒数</p>
+<p>描述：求指定时该距0时有多长时间。<br />
+用饭：TIMETOSEC(time);<br />
+返回time时刻距0时有多长时间，单位为秒，有效时间为（ 0 ~ 235959）。  </p>
+<p>例如： TIMETOSEC(93000)<br />
+返回34200。</p>
+<h3 id="v">V<a class="headerlink" href="#v" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：成交量（手）</p>
+<p>描述：该周期成交量，同VOL。  </p>
+<p>用法：V;<br />
+返回该周期成交量，单位手</p>
+<h3 id="vol">VOL<a class="headerlink" href="#vol" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：成交量（手）</p>
+<p>描述：该周期成交量。  </p>
+<p>用法：VOL;<br />
+返回该周期成交量，单位手。</p>
+<h3 id="volinstk">VOLINSTK<a class="headerlink" href="#volinstk" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：持仓量</p>
+<p>描述：返回该周期持仓量。</p>
+<h3 id="zstjj">ZSTJJ<a class="headerlink" href="#zstjj" title="Permanent link">&para;</a></h3>
+<p>类型：序列行情函数</p>
+<p>功能：分时图均价</p>
+<p>描述：返回该周期的分时图均价线。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E5%8F%8A%E6%97%B6%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 及时行情函数" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              及时行情函数
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E8%B4%A6%E6%88%B7%E5%87%BD%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="下一页: 账户函数" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              账户函数
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1702 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://tdx.icopy.site/%E5%87%BD%E6%95%B0/%E7%BA%BF%E5%9E%8B%E5%92%8C%E8%B5%84%E6%BA%90/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>线型和资源 - 通达信公式</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/default.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/vs.min.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="white">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="通达信公式" class="md-header__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            通达信公式
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              线型和资源
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="通达信公式" class="md-nav__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    通达信公式
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        基础教程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        教程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="教程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          教程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        初级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        高级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E7%AD%94%E7%96%91/" class="md-nav__link">
+        答疑
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        代码示例
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="代码示例" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          代码示例
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        技术指标公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%9D%A1%E4%BB%B6%E9%80%89%E8%82%A1%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        条件选股公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%BA%94%E5%BD%A9k%E7%BA%BF%E6%8C%87%E6%A0%87/" class="md-nav__link">
+        五彩k线指标
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        专家系统
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        函数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="函数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          函数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BC%95%E7%94%A8%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        引用函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%93%8D%E4%BD%9C%E7%AC%A6/" class="md-nav__link">
+        操作符
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BB%98%E5%9B%BE%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        绘图函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          线型和资源
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        线型和资源
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    线型和资源
+  </a>
+  
+    <nav class="md-nav" aria-label="线型和资源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circledot" class="md-nav__link">
+    CIRCLEDOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    COLOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorblack" class="md-nav__link">
+    COLORBLACK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorblue" class="md-nav__link">
+    COLORBLUE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorbrown" class="md-nav__link">
+    COLORBROWN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorcyan" class="md-nav__link">
+    COLORCYAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorgray" class="md-nav__link">
+    COLORGRAY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorgreen" class="md-nav__link">
+    COLORGREEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorliblue" class="md-nav__link">
+    COLORLIBLUE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorlicyan" class="md-nav__link">
+    COLORLICYAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorligray" class="md-nav__link">
+    COLORLIGRAY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorligreen" class="md-nav__link">
+    COLORLIGREEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorlimagenta" class="md-nav__link">
+    COLORLIMAGENTA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorlired" class="md-nav__link">
+    COLORLIRED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colormagenta" class="md-nav__link">
+    COLORMAGENTA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorred" class="md-nav__link">
+    COLORRED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorstick" class="md-nav__link">
+    COLORSTICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorwhite" class="md-nav__link">
+    COLORWHITE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coloryellow" class="md-nav__link">
+    COLORYELLOW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crossdot" class="md-nav__link">
+    CROSSDOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dotline" class="md-nav__link">
+    DOTLINE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawabove" class="md-nav__link">
+    DRAWABOVE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linestick" class="md-nav__link">
+    LINESTICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linethick" class="md-nav__link">
+    LINETHICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    MOVE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mover" class="md-nav__link">
+    MOVER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodraw" class="md-nav__link">
+    NODRAW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noframe" class="md-nav__link">
+    NOFRAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notext" class="md-nav__link">
+    NOTEXT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound1" class="md-nav__link">
+    PLAYSOUND1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound10" class="md-nav__link">
+    PLAYSOUND10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound11" class="md-nav__link">
+    PLAYSOUND11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound12" class="md-nav__link">
+    PLAYSOUND12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound13" class="md-nav__link">
+    PLAYSOUND13
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound14" class="md-nav__link">
+    PLAYSOUND14
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound15" class="md-nav__link">
+    PLAYSOUND15
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound16" class="md-nav__link">
+    PLAYSOUND16
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound17" class="md-nav__link">
+    PLAYSOUND17
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound18" class="md-nav__link">
+    PLAYSOUND18
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound19" class="md-nav__link">
+    PLAYSOUND19
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound2" class="md-nav__link">
+    PLAYSOUND2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound20" class="md-nav__link">
+    PLAYSOUND20
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound3" class="md-nav__link">
+    PLAYSOUND3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound4" class="md-nav__link">
+    PLAYSOUND4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound5" class="md-nav__link">
+    PLAYSOUND5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound6" class="md-nav__link">
+    PLAYSOUND6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound7" class="md-nav__link">
+    PLAYSOUND7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound8" class="md-nav__link">
+    PLAYSOUND8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound9" class="md-nav__link">
+    PLAYSOUND9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointdot" class="md-nav__link">
+    POINTDOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stick" class="md-nav__link">
+    STICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volstick" class="md-nav__link">
+    VOLSTICK
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        数学函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        时间函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BB%9F%E8%AE%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        统计函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A2%E5%8A%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        财务函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B5%84%E9%87%91%E6%B5%81%E5%90%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        资金流向函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        选择函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        逻辑函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%8A%E6%97%B6%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        及时行情函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BA%8F%E5%88%97%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        序列行情函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A6%E6%88%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        账户函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9D%BF%E5%9D%97%E5%AD%97%E7%AC%A6%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        板块字符函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BD%A2%E6%80%81%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        形态函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        指数函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%A4%E6%98%93%E4%BF%A1%E5%8F%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        交易信号函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%B6%E4%BB%96%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        其他函数
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    线型和资源
+  </a>
+  
+    <nav class="md-nav" aria-label="线型和资源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circledot" class="md-nav__link">
+    CIRCLEDOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    COLOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorblack" class="md-nav__link">
+    COLORBLACK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorblue" class="md-nav__link">
+    COLORBLUE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorbrown" class="md-nav__link">
+    COLORBROWN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorcyan" class="md-nav__link">
+    COLORCYAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorgray" class="md-nav__link">
+    COLORGRAY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorgreen" class="md-nav__link">
+    COLORGREEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorliblue" class="md-nav__link">
+    COLORLIBLUE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorlicyan" class="md-nav__link">
+    COLORLICYAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorligray" class="md-nav__link">
+    COLORLIGRAY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorligreen" class="md-nav__link">
+    COLORLIGREEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorlimagenta" class="md-nav__link">
+    COLORLIMAGENTA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorlired" class="md-nav__link">
+    COLORLIRED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colormagenta" class="md-nav__link">
+    COLORMAGENTA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorred" class="md-nav__link">
+    COLORRED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorstick" class="md-nav__link">
+    COLORSTICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorwhite" class="md-nav__link">
+    COLORWHITE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coloryellow" class="md-nav__link">
+    COLORYELLOW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crossdot" class="md-nav__link">
+    CROSSDOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dotline" class="md-nav__link">
+    DOTLINE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawabove" class="md-nav__link">
+    DRAWABOVE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linestick" class="md-nav__link">
+    LINESTICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linethick" class="md-nav__link">
+    LINETHICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    MOVE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mover" class="md-nav__link">
+    MOVER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodraw" class="md-nav__link">
+    NODRAW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noframe" class="md-nav__link">
+    NOFRAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notext" class="md-nav__link">
+    NOTEXT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound1" class="md-nav__link">
+    PLAYSOUND1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound10" class="md-nav__link">
+    PLAYSOUND10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound11" class="md-nav__link">
+    PLAYSOUND11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound12" class="md-nav__link">
+    PLAYSOUND12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound13" class="md-nav__link">
+    PLAYSOUND13
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound14" class="md-nav__link">
+    PLAYSOUND14
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound15" class="md-nav__link">
+    PLAYSOUND15
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound16" class="md-nav__link">
+    PLAYSOUND16
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound17" class="md-nav__link">
+    PLAYSOUND17
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound18" class="md-nav__link">
+    PLAYSOUND18
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound19" class="md-nav__link">
+    PLAYSOUND19
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound2" class="md-nav__link">
+    PLAYSOUND2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound20" class="md-nav__link">
+    PLAYSOUND20
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound3" class="md-nav__link">
+    PLAYSOUND3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound4" class="md-nav__link">
+    PLAYSOUND4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound5" class="md-nav__link">
+    PLAYSOUND5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound6" class="md-nav__link">
+    PLAYSOUND6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound7" class="md-nav__link">
+    PLAYSOUND7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound8" class="md-nav__link">
+    PLAYSOUND8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playsound9" class="md-nav__link">
+    PLAYSOUND9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointdot" class="md-nav__link">
+    POINTDOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stick" class="md-nav__link">
+    STICK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volstick" class="md-nav__link">
+    VOLSTICK
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>线型和资源</h1>
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 展示广告3 -->
+<p><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6890694312814945"
+     data-ad-slot="8321470275"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h2 id="_1">线型和资源<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="circledot">CIRCLEDOT<a class="headerlink" href="#circledot" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画小圆圈线</p>
+<h3 id="color">COLOR<a class="headerlink" href="#color" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：自定义色</p>
+<p>描述：格式为COLOR+"BBGGRR"：BB、GG、RR表示蓝色、绿色和红色的分量，每种颜色的取值范围是00-FF，采用了16进制。  </p>
+<p>例如：MA5: MA(CLOSE,5),COLOR00FFFF;<br />
+表示纯红色与纯绿色的混合色；COLOR808000表示淡蓝色和淡绿色的混合色。</p>
+<h3 id="colorblack">COLORBLACK<a class="headerlink" href="#colorblack" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画黑色</p>
+<h3 id="colorblue">COLORBLUE<a class="headerlink" href="#colorblue" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画蓝色</p>
+<h3 id="colorbrown">COLORBROWN<a class="headerlink" href="#colorbrown" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画棕色</p>
+<h3 id="colorcyan">COLORCYAN<a class="headerlink" href="#colorcyan" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画青色</p>
+<h3 id="colorgray">COLORGRAY<a class="headerlink" href="#colorgray" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画深灰色</p>
+<h3 id="colorgreen">COLORGREEN<a class="headerlink" href="#colorgreen" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画绿色</p>
+<h3 id="colorliblue">COLORLIBLUE<a class="headerlink" href="#colorliblue" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画淡蓝色</p>
+<h3 id="colorlicyan">COLORLICYAN<a class="headerlink" href="#colorlicyan" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画淡青色</p>
+<h3 id="colorligray">COLORLIGRAY<a class="headerlink" href="#colorligray" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画淡灰色</p>
+<h3 id="colorligreen">COLORLIGREEN<a class="headerlink" href="#colorligreen" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画淡绿色</p>
+<h3 id="colorlimagenta">COLORLIMAGENTA<a class="headerlink" href="#colorlimagenta" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画淡洋红色</p>
+<h3 id="colorlired">COLORLIRED<a class="headerlink" href="#colorlired" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画淡红色</p>
+<h3 id="colormagenta">COLORMAGENTA<a class="headerlink" href="#colormagenta" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画洋红色</p>
+<h3 id="colorred">COLORRED<a class="headerlink" href="#colorred" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画红色</p>
+<h3 id="colorstick">COLORSTICK<a class="headerlink" href="#colorstick" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画彩色柱状线</p>
+<p>描述：画彩色柱状线。数据为正数时，向上画红色柱状线，反之向下画绿线。</p>
+<h3 id="colorwhite">COLORWHITE<a class="headerlink" href="#colorwhite" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画白色</p>
+<h3 id="coloryellow">COLORYELLOW<a class="headerlink" href="#coloryellow" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画黄色</p>
+<h3 id="crossdot">CROSSDOT<a class="headerlink" href="#crossdot" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画小叉线</p>
+<h3 id="dotline">DOTLINE<a class="headerlink" href="#dotline" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画虚线</p>
+<h3 id="drawabove">DRAWABOVE<a class="headerlink" href="#drawabove" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：显示在位置之上</p>
+<p>描述：显示在位置之上，对于DRAWTEXT和DRAWNUMBER等函数有用,放在语句的最后面（不能与LINETHICK等函数共用）。  </p>
+<p>例如：DRAWNUMBER(CLOSE&gt;OPEN,HIGH,CLOSE),DRAWABOVE;</p>
+<h3 id="linestick">LINESTICK<a class="headerlink" href="#linestick" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：同时画出柱状线和指标线</p>
+<h3 id="linethick">LINETHICK<a class="headerlink" href="#linethick" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：线型粗细</p>
+<p>描述：格式"LINETHICK+(1-9)"；<br />
+参数的取值范围在1—9之间，"LINETHICK1"表示最细的线，而"LINETHICK9"表示最粗的线。</p>
+<h3 id="move">MOVE<a class="headerlink" href="#move" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：指标线向后偏移N个单位</p>
+<p>描述：输出线名称中带有MOVE字段时，比如TMPMOVE3，表示整个输出线向后偏移3个单位，画线进入未来时间，N不应超过4。<br />
+注：使用MOVE后，不能再使用线型。</p>
+<h3 id="mover">MOVER<a class="headerlink" href="#mover" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：指标线向前偏移N个单位</p>
+<p>描述：输出线名称中带有MOVE字段时，比如TMPMOVER3，表示整个输出线向前偏移3个单位。<br />
+注：使用MOVER后，不能再使用线型。</p>
+<h3 id="nodraw">NODRAW<a class="headerlink" href="#nodraw" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：空线条</p>
+<p>描述：空线条——不画该线。</p>
+<h3 id="noframe">NOFRAME<a class="headerlink" href="#noframe" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：不显示边框</p>
+<p>描述：不显示边框，对于DRAWRECTREL等函数有用，放在语句的最后面。</p>
+<h3 id="notext">NOTEXT<a class="headerlink" href="#notext" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：不显示输出线数据</p>
+<p>描述：输出线名称前带有NOTEXT字样时，不显示输出线数据。</p>
+<h3 id="playsound1">PLAYSOUND1<a class="headerlink" href="#playsound1" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放1号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound10">PLAYSOUND10<a class="headerlink" href="#playsound10" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放10号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound11">PLAYSOUND11<a class="headerlink" href="#playsound11" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放11号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound12">PLAYSOUND12<a class="headerlink" href="#playsound12" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放12号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound13">PLAYSOUND13<a class="headerlink" href="#playsound13" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放13号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound14">PLAYSOUND14<a class="headerlink" href="#playsound14" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放14号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound15">PLAYSOUND15<a class="headerlink" href="#playsound15" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放15号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound16">PLAYSOUND16<a class="headerlink" href="#playsound16" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放16号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound17">PLAYSOUND17<a class="headerlink" href="#playsound17" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放17号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound18">PLAYSOUND18<a class="headerlink" href="#playsound18" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放18号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound19">PLAYSOUND19<a class="headerlink" href="#playsound19" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放19号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound2">PLAYSOUND2<a class="headerlink" href="#playsound2" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放2号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound20">PLAYSOUND20<a class="headerlink" href="#playsound20" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放20号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound3">PLAYSOUND3<a class="headerlink" href="#playsound3" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放3号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound4">PLAYSOUND4<a class="headerlink" href="#playsound4" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放4号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound5">PLAYSOUND5<a class="headerlink" href="#playsound5" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放5号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound6">PLAYSOUND6<a class="headerlink" href="#playsound6" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放6号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound7">PLAYSOUND7<a class="headerlink" href="#playsound7" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放7号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound8">PLAYSOUND8<a class="headerlink" href="#playsound8" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放8号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="playsound9">PLAYSOUND9<a class="headerlink" href="#playsound9" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：播放9号</p>
+<p>描述：声音和动画在[插入资源]中设置，最后一个数据满足条件后播放（只播放一次）。</p>
+<h3 id="pointdot">POINTDOT<a class="headerlink" href="#pointdot" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画小圆点线</p>
+<h3 id="stick">STICK<a class="headerlink" href="#stick" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：画柱状线</p>
+<h3 id="volstick">VOLSTICK<a class="headerlink" href="#volstick" title="Permanent link">&para;</a></h3>
+<p>类型：线型和资源</p>
+<p>功能：成交量柱状线</p>
+<p>描述：当股价上涨时显示红色空心柱，反之则显示绿色实心柱。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E7%BB%98%E5%9B%BE%E5%87%BD%E6%95%B0/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 绘图函数" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              绘图函数
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="下一页: 数学函数" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              数学函数
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>

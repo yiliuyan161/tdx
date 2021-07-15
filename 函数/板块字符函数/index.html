@@ -1,0 +1,1332 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://tdx.icopy.site/%E5%87%BD%E6%95%B0/%E6%9D%BF%E5%9D%97%E5%AD%97%E7%AC%A6%E5%87%BD%E6%95%B0/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>板块字符函数 - 通达信公式</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/default.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/styles/vs.min.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="white">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="通达信公式" class="md-header__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            通达信公式
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              板块字符函数
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="通达信公式" class="md-nav__button md-logo" aria-label="通达信公式" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    通达信公式
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        基础教程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        教程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="教程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          教程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        初级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        高级教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%99%E7%A8%8B/%E7%AD%94%E7%96%91/" class="md-nav__link">
+        答疑
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        代码示例
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="代码示例" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          代码示例
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        技术指标公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E6%9D%A1%E4%BB%B6%E9%80%89%E8%82%A1%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        条件选股公式
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%BA%94%E5%BD%A9k%E7%BA%BF%E6%8C%87%E6%A0%87/" class="md-nav__link">
+        五彩k线指标
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        专家系统
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        函数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="函数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          函数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BC%95%E7%94%A8%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        引用函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%93%8D%E4%BD%9C%E7%AC%A6/" class="md-nav__link">
+        操作符
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BB%98%E5%9B%BE%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        绘图函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BA%BF%E5%9E%8B%E5%92%8C%E8%B5%84%E6%BA%90/" class="md-nav__link">
+        线型和资源
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        数学函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        时间函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%BB%9F%E8%AE%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        统计函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A2%E5%8A%A1%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        财务函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B5%84%E9%87%91%E6%B5%81%E5%90%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        资金流向函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        选择函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        逻辑函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%8A%E6%97%B6%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        及时行情函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BA%8F%E5%88%97%E8%A1%8C%E6%83%85%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        序列行情函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A6%E6%88%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        账户函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          板块字符函数
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        板块字符函数
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    板块字符函数
+  </a>
+  
+    <nav class="md-nav" aria-label="板块字符函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    CODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codelike" class="md-nav__link">
+    CODELIKE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#con2str" class="md-nav__link">
+    CON2STR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dyblock" class="md-nav__link">
+    DYBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fgblock" class="md-nav__link">
+    FGBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fgblocknum" class="md-nav__link">
+    FGBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findstr" class="md-nav__link">
+    FINDSTR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnblock" class="md-nav__link">
+    GNBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnblocknum" class="md-nav__link">
+    GNBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyblock" class="md-nav__link">
+    HYBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hysyl" class="md-nav__link">
+    HYSYL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyzscode" class="md-nav__link">
+    HYZSCODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inblock" class="md-nav__link">
+    INBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nameinclude" class="md-nav__link">
+    NAMEINCLUDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namelike" class="md-nav__link">
+    NAMELIKE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stkname" class="md-nav__link">
+    STKNAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#str2con" class="md-nav__link">
+    STR2CON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strcat" class="md-nav__link">
+    STRCAT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strcmp" class="md-nav__link">
+    STRCMP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strspace" class="md-nav__link">
+    STRSPACE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var2str" class="md-nav__link">
+    VAR2STR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varcat" class="md-nav__link">
+    VARCAT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zdblock" class="md-nav__link">
+    ZDBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zdblocknum" class="md-nav__link">
+    ZDBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zhblock" class="md-nav__link">
+    ZHBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zhblocknum" class="md-nav__link">
+    ZHBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsblock" class="md-nav__link">
+    ZSBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsblocknum" class="md-nav__link">
+    ZSBLOCKNUM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BD%A2%E6%80%81%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        形态函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        指数函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%A4%E6%98%93%E4%BF%A1%E5%8F%B7%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        交易信号函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%B6%E4%BB%96%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        其他函数
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    板块字符函数
+  </a>
+  
+    <nav class="md-nav" aria-label="板块字符函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    CODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codelike" class="md-nav__link">
+    CODELIKE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#con2str" class="md-nav__link">
+    CON2STR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dyblock" class="md-nav__link">
+    DYBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fgblock" class="md-nav__link">
+    FGBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fgblocknum" class="md-nav__link">
+    FGBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findstr" class="md-nav__link">
+    FINDSTR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnblock" class="md-nav__link">
+    GNBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnblocknum" class="md-nav__link">
+    GNBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyblock" class="md-nav__link">
+    HYBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hysyl" class="md-nav__link">
+    HYSYL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyzscode" class="md-nav__link">
+    HYZSCODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inblock" class="md-nav__link">
+    INBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nameinclude" class="md-nav__link">
+    NAMEINCLUDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namelike" class="md-nav__link">
+    NAMELIKE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stkname" class="md-nav__link">
+    STKNAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#str2con" class="md-nav__link">
+    STR2CON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strcat" class="md-nav__link">
+    STRCAT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strcmp" class="md-nav__link">
+    STRCMP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strspace" class="md-nav__link">
+    STRSPACE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var2str" class="md-nav__link">
+    VAR2STR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varcat" class="md-nav__link">
+    VARCAT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zdblock" class="md-nav__link">
+    ZDBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zdblocknum" class="md-nav__link">
+    ZDBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zhblock" class="md-nav__link">
+    ZHBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zhblocknum" class="md-nav__link">
+    ZHBLOCKNUM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsblock" class="md-nav__link">
+    ZSBLOCK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsblocknum" class="md-nav__link">
+    ZSBLOCKNUM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>板块字符函数</h1>
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 展示广告3 -->
+<p><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6890694312814945"
+     data-ad-slot="8321470275"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h2 id="_1">板块字符函数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="code">CODE<a class="headerlink" href="#code" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：品种代码</p>
+<p>描述：返回品种代码。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,CODE);<br />
+在屏幕左上角显示品种代码。</p>
+<h3 id="codelike">CODELIKE<a class="headerlink" href="#codelike" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：模糊匹配品种代码</p>
+<p>描述：返回品种代码是否以参数开头。  </p>
+<p>用法：IF(CODELIKE(\'600\'),X,Y);</p>
+<h3 id="con2str">CON2STR<a class="headerlink" href="#con2str" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：取值转为字符串</p>
+<p>描述：用法：CON2STR(A,N);<br />
+取A最后的值（非序列值）转为字符串，小数位数N。  </p>
+<p>例如：CON2STR(FINANCE(20),3);<br />
+表示取营业收入，以3位小数转为字符串。</p>
+<h3 id="dyblock">DYBLOCK<a class="headerlink" href="#dyblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属地域（字串）</p>
+<p>描述：返回品种所属地域。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,DYBLOCK);<br />
+在屏幕左上角显示所属地域板块。</p>
+<h3 id="fgblock">FGBLOCK<a class="headerlink" href="#fgblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属风格板块（字串）</p>
+<p>描述：返回股票所属风格板块。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,FGBLOCK);<br />
+在屏幕左上角显示所属风格板块。</p>
+<h3 id="fgblocknum">FGBLOCKNUM<a class="headerlink" href="#fgblocknum" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属风格板块（个数）</p>
+<p>描述：返回所属风格板块的个数。</p>
+<h3 id="findstr">FINDSTR<a class="headerlink" href="#findstr" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：字符串查找</p>
+<p>描述：用法：FINDSTR(A,B);<br />
+在字符串A中查找字符串B，如果找到返回1，否则返回0。  </p>
+<p>例如：FINDSTR(\'多头开仓\',\'开仓\');<br />
+在字符串\'多头开仓\'中查找字符串\'开仓\'，返回1。</p>
+<h3 id="gnblock">GNBLOCK<a class="headerlink" href="#gnblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属概念板块（字串）</p>
+<p>描述：返回所属概念板块。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,GNBLOCK);<br />
+在屏幕左上角显示所属概念板块。</p>
+<h3 id="gnblocknum">GNBLOCKNUM<a class="headerlink" href="#gnblocknum" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属概念板块（个数）</p>
+<p>描述：返回所属概念板块的个数。</p>
+<p>例如：IF(GNBLOCKNUM&gt;5,1,0);</p>
+<h3 id="hyblock">HYBLOCK<a class="headerlink" href="#hyblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属行业（字串）</p>
+<p>描述：返回品种所属行业。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,HYBLOCK);<br />
+在屏幕左上角显示所属行业板块。</p>
+<h3 id="hysyl">HYSYL<a class="headerlink" href="#hysyl" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属行业的市盈率</p>
+<p>描述：返回品种所属行业的市盈率。</p>
+<h3 id="hyzscode">HYZSCODE<a class="headerlink" href="#hyzscode" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属行业的板块指数代码</p>
+<p>描述：返回品种所属行业的板块指数代码。  </p>
+<p>例如：CALCSTOCKINDEX(HYZSCODE,\'KDJ\',3);</p>
+<h3 id="inblock">INBLOCK<a class="headerlink" href="#inblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：属于某板块</p>
+<p>描述：用法：if(INBLOCK(\'沪深300\'),x,y);<br />
+板块名称支持系统板块（上证Ａ股，深证Ａ股，沪深Ａ股，中小企业板，创业板，自选股，临时条件股，板块指数等），地区，行业，概念，风格，指数，组合和自定义板块，注意名称要准确。</p>
+<h3 id="nameinclude">NAMEINCLUDE<a class="headerlink" href="#nameinclude" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：品种名称中包含</p>
+<p>描述：品种名称中是否包含参数。  </p>
+<p>用法：IF(NAMEINCLUDE(\'文化\'),X,Y);</p>
+<h3 id="namelike">NAMELIKE<a class="headerlink" href="#namelike" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：模糊匹配品种名称</p>
+<p>描述：返回股票名称是否以参数开头。  </p>
+<p>用法：IF(NAMELIKE(\'ST\'),X,Y);</p>
+<h3 id="stkname">STKNAME<a class="headerlink" href="#stkname" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：品种名称</p>
+<p>描述：返回品种名称。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,STKNAME);<br />
+在屏幕左上角显示品种名称。</p>
+<h3 id="str2con">STR2CON<a class="headerlink" href="#str2con" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：字符串转为数字</p>
+<p>描述：用法：STR2CON(S);<br />
+将S字符串转化为数字。  </p>
+<p>例如：STR2CON(\'2365.02\');<br />
+表示将字符串\'2365.02\'转化为数字2365.02。</p>
+<h3 id="strcat">STRCAT<a class="headerlink" href="#strcat" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：字符串相加</p>
+<p>描述：用法：STRCAT(A,B);</p>
+<p>将两个字符串A，B（非序列化）相加成一个字符串C。</p>
+<p>例如：STRCAT(\'多头\',\'开仓\');</p>
+<p>将两个字符串 \'多头\' , \'开仓\'相加成一个字符串\'多头开仓\'。</p>
+<h3 id="strcmp">STRCMP<a class="headerlink" href="#strcmp" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：字符串比较</p>
+<p>描述：用法：STRCMP(A,B);<br />
+比较两个字符串A，B是否相等。  </p>
+<p>例如：STRCMP(HYBLOCK,\'房地产\');<br />
+将成分股行业字符串与\'房地产\'比较，是否相等，如果相等表示属于房地产板块。</p>
+<h3 id="strspace">STRSPACE<a class="headerlink" href="#strspace" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：字符串加一空格</p>
+<p>描述：用法：STRSPACE(A);<br />
+字符串附带一空格。</p>
+<h3 id="var2str">VAR2STR<a class="headerlink" href="#var2str" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：取值转为字符串（序列）</p>
+<p>描述：用法：VAR2STR(A,N);<br />
+取A的每一个值转为字符串，小数位数N。  </p>
+<p>例如：VAR2STR(C,3);<br />
+表示取收盘以3位小数转为字符串。</p>
+<h3 id="varcat">VARCAT<a class="headerlink" href="#varcat" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：字符串相加（序列）</p>
+<p>描述：用法：VARCAT(A,B);<br />
+将两个字符串A，B相加成一个字符串C。  </p>
+<p>例如：VARCAT(\'多头\',VAR2STR(C,2));<br />
+将两个字符串相加成一个字符串。</p>
+<h3 id="zdblock">ZDBLOCK<a class="headerlink" href="#zdblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属自定义板块（字串）</p>
+<p>描述：返回股票所属自定义板块。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,ZDBLOCK);<br />
+在屏幕左上角显示所属自定义板块。</p>
+<h3 id="zdblocknum">ZDBLOCKNUM<a class="headerlink" href="#zdblocknum" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属自定义板块（个数）</p>
+<p>描述：返回所属自定义板块的个数。</p>
+<h3 id="zhblock">ZHBLOCK<a class="headerlink" href="#zhblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属组合板块（字串）</p>
+<p>描述：返回股票所属组合板块。</p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,ZHBLOCK);</p>
+<p>在屏幕左上角显示所属组合板块。</p>
+<h3 id="zhblocknum">ZHBLOCKNUM<a class="headerlink" href="#zhblocknum" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属组合板块（个数）</p>
+<p>描述：返回所属组合板块的个数。</p>
+<h3 id="zsblock">ZSBLOCK<a class="headerlink" href="#zsblock" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属指数板块（字串）</p>
+<p>描述：返回股票所属指数板块。  </p>
+<p>例如：DRAWTEXT\_FIX(ISLASTBAR,0,0,0,ZSBLOCK);<br />
+在屏幕左上角显示所属指数板块。</p>
+<h3 id="zsblocknum">ZSBLOCKNUM<a class="headerlink" href="#zsblocknum" title="Permanent link">&para;</a></h3>
+<p>类型：板块字符函数</p>
+<p>功能：所属指数板块（个数）</p>
+<p>描述：返回所属指数板块的个数。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E8%B4%A6%E6%88%B7%E5%87%BD%E6%95%B0/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 账户函数" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              账户函数
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E5%BD%A2%E6%80%81%E5%87%BD%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="下一页: 形态函数" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              形态函数
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://cdn.staticfile.org/highlight.js/11.0.0-alpha1/highlight.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>
